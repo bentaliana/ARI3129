@@ -1,0 +1,10 @@
+{
+  "path": "C:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment Resources\\YOLO_COCO_mounting",
+  "train": "images/train",
+  "val": "images/val",
+  "test": "images/test",
+  "names": [
+    "Pole-mounted",
+    "Wall-mounted"
+  ]
+}
