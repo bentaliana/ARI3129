@@ -1,0 +1,71 @@
+{
+  "student": "string",
+  "model_name": "string",
+  "task": "string",
+  "framework": "string",
+  "framework_version": "string",
+
+  "dataset": {
+    "name": "string",
+    "num_classes": 0,
+    "class_names": ["string"],
+    "train_images": 0,
+    "val_images": 0,
+    "test_images": 0
+  },
+
+  "training": {
+    "epochs": 0,
+    "batch_size": 0,
+    "learning_rate": 0.0,
+    "image_size": null,
+    "augmentation": "string",
+    "pretrained": "string",
+    "seed": 0,
+    "total_time_hours": 0.0,
+    "best_epoch": 0,
+    "best_val_map": null
+  },
+
+  "metrics": {
+    "mAP": 0.0,
+    "AP50": 0.0,
+    "AP75": 0.0,
+    "per_class_AP": {
+      "class_name": 0.0
+    }
+  },
+
+  "model_complexity": {
+    "num_parameters": null,
+    "checkpoint_size_mb": null
+  },
+
+  "speed": {
+    "device": "string",
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_samples": 100,
+    "mean_latency_ms": 0.0,
+    "std_latency_ms": 0.0,
+    "FPS": 0.0,
+    "includes_preprocessing": true
+  },
+
+  "artifacts": {
+    "work_dir": "string",
+    "checkpoint_best": "string",
+    "checkpoint_last": "string",
+    "tensorboard_logdir": "string",
+
+    "plots": {
+      "training_curves": "string",
+      "per_class_ap_chart": "string",
+      "qualitative_grid": "string",
+
+      "confidence_histogram": null,
+      "precision_recall_curve": null,
+      "confusion_matrix": null
+    }
+  }
+}
