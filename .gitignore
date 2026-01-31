@@ -1,3 +1,6 @@
 yolo12n.pt
 
 dataset/*/images/
+
+work_dirs/faster_rcnn_sign_type/best.pth
+work_dirs/faster_rcnn_sign_type/last.pth

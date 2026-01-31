@@ -1,0 +1,75 @@
+{
+  "student": "BenTaliana",
+  "model_name": "faster_rcnn_r50_fpn",
+  "task": "sign_type",
+  "framework": "torchvision",
+  "framework_version": "0.17.1+cu121",
+  "dataset": {
+    "name": "MTSD",
+    "num_classes": 6,
+    "class_names": [
+      "Blind-Spot Mirror (Convex)",
+      "No Entry (One Way)",
+      "No Through Road (T-Sign)",
+      "Pedestrian Crossing",
+      "Roundabout Ahead",
+      "Stop"
+    ],
+    "train_images": 483,
+    "val_images": 88,
+    "test_images": 86
+  },
+  "training": {
+    "epochs": 8,
+    "batch_size": 8,
+    "learning_rate": 0.005,
+    "image_size": "520x520",
+    "augmentation": "Resize(520x520) + ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2)",
+    "pretrained": "COCO",
+    "seed": 3129,
+    "total_time_hours": 0.52,
+    "best_epoch": 7,
+    "best_val_map": 0.749
+  },
+  "metrics": {
+    "mAP": 0.7372,
+    "AP50": 0.9002,
+    "AP75": 0.8733,
+    "per_class_AP": {
+      "Blind-Spot Mirror (Convex)": 0.823,
+      "No Entry (One Way)": 0.7438,
+      "No Through Road (T-Sign)": 0.5765,
+      "Pedestrian Crossing": 0.7133,
+      "Roundabout Ahead": 0.7554,
+      "Stop": 0.811
+    }
+  },
+  "model_complexity": {
+    "num_parameters": 41324786,
+    "checkpoint_size_mb": 314.94
+  },
+  "speed": {
+    "device": "cuda",
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_samples": 100,
+    "mean_latency_ms": 61.9,
+    "std_latency_ms": 3.68,
+    "FPS": 16.16,
+    "includes_preprocessing": false
+  },
+  "artifacts": {
+    "work_dir": "work_dirs/faster_rcnn_sign_type",
+    "checkpoint_best": "work_dirs/faster_rcnn_sign_type\\best.pth",
+    "checkpoint_last": "work_dirs/faster_rcnn_sign_type\\last.pth",
+    "tensorboard_logdir": "work_dirs/faster_rcnn_sign_type\\tensorboard",
+    "plots": {
+      "training_curves": "work_dirs/faster_rcnn_sign_type\\training_curves.png",
+      "per_class_ap_chart": "work_dirs/faster_rcnn_sign_type\\per_class_ap.png",
+      "qualitative_grid": "work_dirs/faster_rcnn_sign_type\\qualitative_results.png",
+      "confidence_histogram": "work_dirs/faster_rcnn_sign_type\\confidence_histogram.png",
+      "precision_recall_curve": null,
+      "confusion_matrix": null
+    }
+  }
+}
