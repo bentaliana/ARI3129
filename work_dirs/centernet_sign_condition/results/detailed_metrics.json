@@ -1,0 +1,31 @@
+{
+  "overall_accuracy": 0.7558139534883721,
+  "total_test_images": 86,
+  "correctly_classified": 65,
+  "per_class_metrics": {
+    "Good": {
+      "precision": 0.7558139534883721,
+      "recall": 1.0,
+      "f1_score": 0.8609271523178808,
+      "support": 65
+    },
+    "Weathered": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 2
+    },
+    "Heavily Damaged": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 19
+    }
+  },
+  "average_precision_scores": {
+    "Good": 0.8865836387299657,
+    "Weathered": 0.040507364975450086,
+    "Heavily Damaged": 0.47652851597507817
+  },
+  "mean_average_precision": 0.4678731732268313
+}
