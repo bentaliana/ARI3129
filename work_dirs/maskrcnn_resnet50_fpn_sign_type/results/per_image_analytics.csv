@@ -1,0 +1,11 @@
+image_id,detections,ground_truth,mean_confidence,class_breakdown
+70,2,1,0.5960112810134888,{'Stop': 2}
+28,1,1,0.831234335899353,{'No Entry (One Way)': 1}
+67,0,1,0.0,{}
+80,0,1,0.0,{}
+29,2,1,0.4951043426990509,"{'No Entry (One Way)': 1, 'Blind-Spot Mirror (Convex)': 1}"
+57,1,1,0.4157053828239441,{'No Entry (One Way)': 1}
+23,2,1,0.3878062963485718,"{'No Entry (One Way)': 1, 'Blind-Spot Mirror (Convex)': 1}"
+39,1,1,0.44193729758262634,{'No Entry (One Way)': 1}
+68,2,1,0.5433946847915649,{'Stop': 2}
+75,1,1,0.6482486724853516,{'No Entry (One Way)': 1}

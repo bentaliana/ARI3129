@@ -1,0 +1,46 @@
+{
+  "model_name": "centernet",
+  "course": "ARI3129",
+  "student": "Alison Attard",
+  "num_classes": 6,
+  "class_names": [
+    "Blind-Spot Mirror (Convex)",
+    "No Entry (One Way)",
+    "No Through Road (T-Sign)",
+    "Pedestrian Crossing",
+    "Roundabout Ahead",
+    "Stop"
+  ],
+  "input_size": 512,
+  "batch_size": 8,
+  "num_epochs": 12,
+  "learning_rate": 0.0001,
+  "metrics": {
+    "overall_accuracy": 0.4069767441860465,
+    "best_val_accuracy": 0.3409090909090909
+  },
+  "per_class_accuracy": {
+    "Blind-Spot Mirror (Convex)": 0.0,
+    "No Entry (One Way)": 0.9375,
+    "No Through Road (T-Sign)": 0.0,
+    "Pedestrian Crossing": 0.5555555555555556,
+    "Roundabout Ahead": 0.0,
+    "Stop": 0.0
+  },
+  "model_complexity": {
+    "num_parameters": 413062,
+    "model_size_mb": 1.5757064819335938
+  },
+  "inference_speed": {
+    "mean_latency_ms": 19.984805583953857,
+    "std_latency_ms": 1.87909084138424,
+    "fps": 50.03801492084152,
+    "includes_preprocessing": true,
+    "num_warmup": 10,
+    "device": "CPU"
+  },
+  "training_summary": {
+    "best_epoch": 2,
+    "total_training_time_seconds": 721.3601357936859
+  }
+}

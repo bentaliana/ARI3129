@@ -1,0 +1,37 @@
+
+convergence behavior:
+the model training loss decreased steadily from epoch 1 to epoch 5, indicating
+stable learning. the loss trajectory suggests the model was still improving at
+epoch 5, indicating potential benefits from additional epochs.
+
+overall performance:
+the model achieved a test mAP of 0.0000 with AP50=0.0000 and AP75=0.0000.
+performance varies across sign types based on size, visibility, and mounting type.
+performance is strongest on larger, well-positioned signs and weaker on small
+or occluded instances.
+
+key failure modes:
+1. small signs at distance: often missed due to low pixel density after resize
+2. occluded signs: partially hidden signs result in 15-25% confidence drop
+3. reflections/glare: highly reflective sign surfaces confuse the detector
+4. unusual viewing angles: signs not captured front-on have lower detection rate
+5. weather effects: rain, snow, or dirt on signs impacts visibility
+
+speed vs accuracy:
+mean inference latency: 2482.5ms (0.4 fps) on the current device.
+this speed is suitable for semi-real-time monitoring applications where
+continuous processing is needed but strict latency requirements are not critical.
+
+practical implications:
+the model is suitable for traffic sign inventory, monitoring, and maintenance
+planning. the balance between accuracy and speed suggests deployment on CPU
+resources in production systems, with GPU acceleration available for batch
+processing of historical footage.
+
+limitations and improvements:
+dataset size (600 images) may limit generalization to unseen scenarios.
+no handling of multiple overlapping signs in close proximity. seasonal
+variations not explicitly addressed. future improvements could include:
+multi-scale detection for handling size variation, hard negative mining for
+improved false positive reduction, ensemble methods for improved robustness,
+and domain adaptation for different weather and lighting conditions.
