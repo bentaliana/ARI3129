@@ -1,0 +1,11 @@
+names:
+- Circle
+- Damaged
+- Octagonal
+- Square
+- Triangle
+nc: 5
+path: c:\Users\benja\OneDrive\Desktop\Bsc. A.I\Year 3\Advanced Computer Vision\Project\ARI3129\dataset\COCO-based_COCO
+test: images/test
+train: images/train
+val: images/val
