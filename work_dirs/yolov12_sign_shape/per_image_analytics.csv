@@ -1,0 +1,11 @@
+Image_ID,Total_Detections,Mean_Confidence,Circle,Damaged,Octagonal,Square,Triangle
+fb827152-MelatAssefa_52_Side,1,0.9273,0,0,1,0,0
+77a44aa1-MichaelFarrugia_61_Back,3,0.4061,1,0,0,2,0
+a96db2b1-MelatAssefa_47_Back,2,0.4999,2,0,0,0,0
+6a654ba2-MichaelFarrugia_13_Side,2,0.6496,0,0,0,1,1
+22efedae-MelatAssefa_44_Front,1,0.9034,1,0,0,0,0
+5fd489e8-MichaelFarrugia_3_Side,2,0.5488,0,0,0,2,0
+5bba0f96-MelatAssefa_57_Front,3,0.5762,2,0,1,0,0
+28809400-MelatAssefa_23_Front,1,0.9871,1,0,0,0,0
+a50f9868-MelatAssefa_33_Side,1,0.9383,1,0,0,0,0
+74bf3823-MelatAssefa_39_Front,1,0.9531,1,0,0,0,0
