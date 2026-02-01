@@ -1,0 +1,42 @@
+{
+  "model_name": "centernet",
+  "course": "ARI3129",
+  "task": "Task 2b - Condition Classification",
+  "student": "Alison Attard",
+  "attribute": "sign_condition",
+  "num_classes": 3,
+  "class_names": [
+    "Good",
+    "Weathered",
+    "Heavily Damaged"
+  ],
+  "input_size": 512,
+  "batch_size": 8,
+  "num_epochs": 10,
+  "learning_rate": 0.001,
+  "metrics": {
+    "overall_accuracy": 0.7558139534883721,
+    "best_val_accuracy": 0.8636363636363636
+  },
+  "per_class_accuracy": {
+    "Good": 1.0,
+    "Weathered": 0.0,
+    "Heavily Damaged": 0.0
+  },
+  "model_complexity": {
+    "num_parameters": 1239652,
+    "model_size_mb": 4.7288970947265625
+  },
+  "inference_speed": {
+    "mean_latency_ms": 87.62588262557983,
+    "std_latency_ms": 5.429027744570255,
+    "fps": 11.412153236423766,
+    "includes_preprocessing": true,
+    "num_warmup": 10,
+    "device": "CPU"
+  },
+  "training_summary": {
+    "best_epoch": 1,
+    "total_training_time_seconds": 2246.6691777706146
+  }
+}

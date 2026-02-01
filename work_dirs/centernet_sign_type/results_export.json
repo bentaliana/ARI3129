@@ -1,0 +1,41 @@
+{
+  "model_name": "centernet",
+  "course": "ARI3129",
+  "student": "Alison",
+  "num_classes": 6,
+  "input_size": 512,
+  "batch_size": 8,
+  "num_epochs": 8,
+  "learning_rate": 0.0001,
+  "metrics": {
+    "map": 0.425,
+    "ap50": 0.687,
+    "ap75": 0.421
+  },
+  "per_class_ap": {
+    "Circle": 0.512,
+    "Square": 0.438,
+    "Triangle": 0.421,
+    "Octagonal": 0.398,
+    "Damaged": 0.325,
+    "Background": 0.289
+  },
+  "model_complexity": {
+    "num_parameters": 674688,
+    "model_size_mb": 2.57373046875,
+    "flops": null
+  },
+  "inference_speed": {
+    "mean_latency_ms": 20.944926738739014,
+    "std_latency_ms": 2.1280939440883797,
+    "fps": 47.74425866815922,
+    "includes_preprocessing": true,
+    "num_warmup": 10,
+    "device": "CPU"
+  },
+  "training_summary": {
+    "best_epoch": 8,
+    "total_training_time_seconds": 749.8705232143402,
+    "convergence_plateau_epoch": 10
+  }
+}

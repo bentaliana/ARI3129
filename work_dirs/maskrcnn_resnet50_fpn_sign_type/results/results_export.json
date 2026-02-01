@@ -1,0 +1,24 @@
+{
+  "detector_name": "maskrcnn_resnet50_fpn",
+  "attribute_focus": "sign_type",
+  "student": "Alison Attard",
+  "num_classes": 7,
+  "epochs": 8,
+  "batch_size": 8,
+  "test_mAP": 0.0,
+  "test_AP50": 0.0,
+  "test_AP75": 0.0,
+  "num_parameters": 43949305,
+  "model_size_mb": 167.65329360961914,
+  "mean_latency_ms": 2482.48028755188,
+  "std_latency_ms": 0.0,
+  "fps": 0.40282293680815445,
+  "speed_protocol": {
+    "includes_preprocessing": false,
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_timed": 100
+  },
+  "total_training_time_hours": 0.8626657452848222,
+  "epochs_trained": 8
+}
