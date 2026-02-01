@@ -1,0 +1,75 @@
+{
+  "student": "BenTaliana",
+  "model_name": "retinanet_r50_fpn_v2",
+  "task": "sign_type",
+  "framework": "torchvision",
+  "framework_version": "0.17.1+cu121",
+  "dataset": {
+    "name": "MTSD",
+    "num_classes": 6,
+    "class_names": [
+      "Blind-Spot Mirror (Convex)",
+      "No Entry (One Way)",
+      "No Through Road (T-Sign)",
+      "Pedestrian Crossing",
+      "Roundabout Ahead",
+      "Stop"
+    ],
+    "train_images": 483,
+    "val_images": 88,
+    "test_images": 86
+  },
+  "training": {
+    "epochs": 8,
+    "batch_size": 8,
+    "learning_rate": 0.01,
+    "image_size": "520x520",
+    "augmentation": "Resize(520x520) + ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2)",
+    "pretrained": "COCO",
+    "seed": 3129,
+    "total_time_hours": 0.64,
+    "best_epoch": 8,
+    "best_val_map": 0.4343
+  },
+  "metrics": {
+    "mAP": 0.4036,
+    "AP50": 0.4546,
+    "AP75": 0.4491,
+    "per_class_AP": {
+      "Blind-Spot Mirror (Convex)": 0.5038,
+      "No Entry (One Way)": 0.6896,
+      "No Through Road (T-Sign)": 0.181,
+      "Pedestrian Crossing": 0.2076,
+      "Roundabout Ahead": 0.0531,
+      "Stop": 0.7863
+    }
+  },
+  "model_complexity": {
+    "num_parameters": 36434586,
+    "checkpoint_size_mb": 277.46
+  },
+  "speed": {
+    "device": "cuda",
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_samples": 100,
+    "mean_latency_ms": 184.15,
+    "std_latency_ms": 131.9,
+    "FPS": 5.43,
+    "includes_preprocessing": false
+  },
+  "artifacts": {
+    "work_dir": "work_dirs/retinanet_sign_type",
+    "checkpoint_best": "work_dirs/retinanet_sign_type\\best.pth",
+    "checkpoint_last": "work_dirs/retinanet_sign_type\\last.pth",
+    "tensorboard_logdir": "work_dirs/retinanet_sign_type\\tensorboard",
+    "plots": {
+      "training_curves": "work_dirs/retinanet_sign_type\\training_curves.png",
+      "per_class_ap_chart": "work_dirs/retinanet_sign_type\\per_class_ap.png",
+      "qualitative_grid": "work_dirs/retinanet_sign_type\\qualitative_results.png",
+      "confidence_histogram": "work_dirs/retinanet_sign_type\\confidence_histogram.png",
+      "precision_recall_curve": null,
+      "confusion_matrix": null
+    }
+  }
+}

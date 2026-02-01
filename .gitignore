@@ -4,3 +4,6 @@ dataset/*/images/
 
 work_dirs/faster_rcnn_sign_type/best.pth
 work_dirs/faster_rcnn_sign_type/last.pth
+
+work_dirs/retinanet_sign_type/best.pth
+work_dirs/retinanet_sign_type/last.pth
