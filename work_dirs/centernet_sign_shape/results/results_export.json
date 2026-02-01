@@ -1,0 +1,45 @@
+{
+  "model_name": "centernet",
+  "course": "ARI3129",
+  "student": "Alison Attard",
+  "attribute": "sign_shape",
+  "num_classes": 5,
+  "class_names": [
+    "Circle",
+    "Damaged",
+    "Octagonal",
+    "Square",
+    "Triangle"
+  ],
+  "input_size": 512,
+  "batch_size": 8,
+  "num_epochs": 12,
+  "learning_rate": 0.0001,
+  "metrics": {
+    "overall_accuracy": 0.5930232558139535,
+    "best_val_accuracy": 0.5681818181818182
+  },
+  "per_class_accuracy": {
+    "Circle": 0.9,
+    "Damaged": 0.0,
+    "Octagonal": 0.0,
+    "Square": 0.3333333333333333,
+    "Triangle": 0.0
+  },
+  "model_complexity": {
+    "num_parameters": 412933,
+    "model_size_mb": 1.5752143859863281
+  },
+  "inference_speed": {
+    "mean_latency_ms": 21.339232921600342,
+    "std_latency_ms": 1.8520166455722011,
+    "fps": 46.862040621327296,
+    "includes_preprocessing": true,
+    "num_warmup": 10,
+    "device": "CPU"
+  },
+  "training_summary": {
+    "best_epoch": 2,
+    "total_training_time_seconds": 716.2918043136597
+  }
+}
