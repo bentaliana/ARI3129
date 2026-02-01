@@ -1,0 +1,63 @@
+{
+  "student": "MichaelFarrugia",
+  "model_name": "rf_detr",
+  "task": "mounting_type",
+  "framework": "RF-DETR (PyTorch)",
+  "framework_version": "2.8.0+cu128",
+  "dataset": {
+    "name": "MTSD Mounting Type",
+    "num_classes": 2,
+    "class_names": [
+      "Pole-mounted",
+      "Wall-mounted"
+    ],
+    "train_images": 483,
+    "val_images": 88,
+    "test_images": 86
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "image_size": "448x448",
+    "augmentation": "RF-DETR default augmentations",
+    "pretrained": "COCO",
+    "seed": null,
+    "total_time_hours": null,
+    "optimizer": "AdamW",
+    "lr_scheduler": "Cosine",
+    "early_stopping": true,
+    "early_stopping_patience": 3
+  },
+  "metrics": {
+    "mAP": 0.635,
+    "mAP50": 0.672,
+    "mAP75": 0.672,
+    "per_class_AP": {}
+  },
+  "model_complexity": {
+    "num_parameters": 0,
+    "checkpoint_size_mb": 474.61
+  },
+  "speed": {
+    "device": "NVIDIA GeForce RTX 4070",
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_samples": 100,
+    "mean_latency_ms": 173.21,
+    "std_latency_ms": 70.08,
+    "FPS": 5.77,
+    "includes_preprocessing": true
+  },
+  "artifacts": {
+    "work_dir": "work_dirs/rf-detr-mounting-type",
+    "checkpoint_best": "work_dirs/rf-detr-mounting-type/best.pt",
+    "tensorboard_logdir": "work_dirs/rf-detr-mounting-type/tensorboard",
+    "plots": {
+      "training_curves": "params/rf-detr-mounting-type/metrics_plot.png",
+      "per_class_ap_chart": "work_dirs/rf-detr-mounting-type\\per_class_ap.png",
+      "qualitative_grid": "work_dirs/rf-detr-mounting-type\\qualitative_results.png",
+      "confidence_histogram": "work_dirs/rf-detr-mounting-type\\confidence_histogram.png"
+    }
+  }
+}
