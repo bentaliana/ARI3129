@@ -1,0 +1,66 @@
+{
+  "student": "MelatAssefa",
+  "model_name": "yolov8",
+  "task": "sign_type",
+  "framework": "ultralytics",
+  "framework_version": "8.4.9",
+  "dataset": {
+    "name": "MTSD",
+    "num_classes": 6,
+    "class_names": [
+      "Blind-Spot Mirror (Convex)",
+      "No Entry (One Way)",
+      "No Through Road (T-Sign)",
+      "Pedestrian Crossing",
+      "Roundabout Ahead",
+      "Stop"
+    ],
+    "train_images": 483,
+    "val_images": 88,
+    "test_images": 86
+  },
+  "training": {
+    "epochs": 15,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "image_size": "416x416",
+    "augmentation": "HSV only (mild). No geometric (mosaic/mixup/flip/scale/rotate disabled).",
+    "pretrained": "yolov8n.pt",
+    "seed": 3129
+  },
+  "metrics": {
+    "mAP": 0.8266229304339976,
+    "AP50": 0.925034665183739,
+    "AP75": 0.9133945407096915,
+    "per_class_AP": {
+      "Blind-Spot Mirror (Convex)": 0.8339947189804185,
+      "No Entry (One Way)": 0.7794071009575771,
+      "No Through Road (T-Sign)": 0.6874592540087011,
+      "Pedestrian Crossing": 0.852844941520468,
+      "Roundabout Ahead": 0.9949999999999999,
+      "Stop": 0.8110315671368195
+    }
+  },
+  "model_complexity": {
+    "checkpoint_best_size_mb": 5.92
+  },
+  "speed": {
+    "device": "cpu",
+    "batch_size": 1,
+    "num_samples": 86,
+    "mean_latency_ms": 341.88,
+    "std_latency_ms": 119.94,
+    "FPS": 2.92,
+    "includes_preprocessing": true
+  },
+  "artifacts": {
+    "work_dir": "c:\\ARI3129-repo\\work_dirs\\yolov8_sign_type",
+    "checkpoint_best": "c:\\ARI3129-repo\\work_dirs\\yolov8_sign_type\\weights\\best.pt",
+    "checkpoint_last": "c:\\ARI3129-repo\\work_dirs\\yolov8_sign_type\\weights\\last.pt",
+    "plots": {
+      "training_curves": null,
+      "qualitative_grid": null,
+      "confidence_histogram": null
+    }
+  }
+}
