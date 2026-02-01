@@ -1,0 +1,74 @@
+{
+  "student": "Melat Assefa",
+  "model_name": "yolov12",
+  "task": "sign_shape",
+  "framework": "Ultralytics",
+  "framework_version": "Ultralytics YOLOv8",
+  "dataset": {
+    "name": "MTSD Sign Shape",
+    "num_classes": 5,
+    "class_names": [
+      "Circle",
+      "Damaged",
+      "Octagonal",
+      "Square",
+      "Triangle"
+    ],
+    "train_images": 483,
+    "val_images": 88,
+    "test_images": 86
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 8,
+    "learning_rate": 0.005,
+    "image_size": "640x640",
+    "augmentation": "YOLO default augmentations + mosaic",
+    "pretrained": "COCO",
+    "seed": 3129,
+    "total_time_hours": 0.28,
+    "optimizer": "AdamW",
+    "lr_scheduler": "Cosine annealing",
+    "patience": 5,
+    "workers": 4
+  },
+  "metrics": {
+    "mAP": 0.7706,
+    "mAP50": 0.9222,
+    "mAP75": 0.8472,
+    "per_class_AP": {
+      "Circle": 0.7489,
+      "Damaged": 0.7706,
+      "Octagonal": 0.7798,
+      "Square": 0.7672,
+      "Triangle": 0.7866
+    }
+  },
+  "model_complexity": {
+    "num_parameters": 3006623,
+    "checkpoint_size_mb": 5.93
+  },
+  "speed": {
+    "device": "GPU",
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_samples": 100,
+    "mean_latency_ms": 75.51,
+    "std_latency_ms": 2.92,
+    "FPS": 13.24,
+    "includes_preprocessing": true
+  },
+  "artifacts": {
+    "work_dir": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape",
+    "checkpoint_best": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\train\\weights\\best.pt",
+    "checkpoint_last": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\train\\weights\\last.pt",
+    "tensorboard_logdir": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\train",
+    "plots": {
+      "training_curves": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\training_curves.png",
+      "per_class_ap_chart": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\per_class_ap.png",
+      "qualitative_grid": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\qualitative_results.png",
+      "confidence_histogram": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\confidence_histogram.png",
+      "gt_samples": "c:\\Users\\micha\\Documents\\School\\University\\3rd Year\\Advanced Computer Vision for Artificial Intelligence\\Assignment_LATEST\\work_dirs\\yolov12_sign_shape\\gt_samples.png"
+    }
+  }
+}
