@@ -1,4 +1,32 @@
-pillow
-folium
-matplotlib
+# Core scientific computing
 numpy
+pandas
+
+# Image processing and visualization
+pillow
+matplotlib
+seaborn
+opencv-python
+
+# Deep learning frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+tensorboard
+
+# Object detection frameworks
+ultralytics  # YOLOv8, YOLOv11, YOLOv12
+mmdet  # MMDetection for Faster R-CNN, RetinaNet, CenterNet, Mask R-CNN
+mmcv>=2.0.0  # MMDetection dependency
+mmengine  # MMDetection dependency
+supervision  # For metrics and visualization
+rfdetr  # RF-DETR model
+
+# COCO evaluation
+pycocotools
+
+# Data utilities
+pyyaml
+tqdm
+
+# Geospatial visualization (for data_visualisation notebook)
+folium

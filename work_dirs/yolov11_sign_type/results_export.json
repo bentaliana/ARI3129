@@ -1,0 +1,74 @@
+{
+  "student": "MichaelFarrugia",
+  "model_name": "yolov11n",
+  "task": "sign_type",
+  "framework": "ultralytics",
+  "framework_version": "YOLOv11",
+  "dataset": {
+    "name": "MTSD",
+    "num_classes": 6,
+    "class_names": [
+      "Blind-Spot Mirror (Convex)",
+      "No Entry (One Way)",
+      "No Through Road (T-Sign)",
+      "Pedestrian Crossing",
+      "Roundabout Ahead",
+      "Stop"
+    ],
+    "train_images": 253,
+    "val_images": 47,
+    "test_images": 45
+  },
+  "training": {
+    "epochs": 8,
+    "batch_size": 8,
+    "learning_rate": 0.01,
+    "image_size": "640x640",
+    "augmentation": "YOLO default augmentations + mosaic",
+    "pretrained": "COCO",
+    "seed": 3129,
+    "total_time_hours": 0.22,
+    "optimizer": "SGD",
+    "lr_scheduler": "Cosine annealing"
+  },
+  "metrics": {
+    "mAP": 0.8111,
+    "AP50": 0.9119,
+    "AP75": 0.9011,
+    "per_class_AP": {
+      "Blind-Spot Mirror (Convex)": 0.7961,
+      "No Entry (One Way)": 0.7412,
+      "No Through Road (T-Sign)": 0.7574,
+      "Pedestrian Crossing": 0.7653,
+      "Roundabout Ahead": 0.951,
+      "Stop": 0.8556
+    }
+  },
+  "model_complexity": {
+    "num_parameters": 2583322,
+    "checkpoint_size_mb": 0.0
+  },
+  "speed": {
+    "device": "GPU",
+    "batch_size": 1,
+    "num_warmup": 10,
+    "num_samples": 100,
+    "mean_latency_ms": 85.13,
+    "std_latency_ms": 6.45,
+    "FPS": 11.75,
+    "includes_preprocessing": true
+  },
+  "artifacts": {
+    "work_dir": "work_dirs/yolov11_sign_type",
+    "checkpoint_best": "work_dirs/yolov11_sign_type/weights/best.pt",
+    "checkpoint_last": "work_dirs/yolov11_sign_type/weights/last.pt",
+    "plots": {
+      "training_curves": "work_dirs/yolov11_sign_type/training_curves.png",
+      "per_class_ap_chart": "work_dirs/yolov11_sign_type/per_class_ap.png",
+      "qualitative_grid": "work_dirs/yolov11_sign_type/qualitative_results.png",
+      "confidence_histogram": "work_dirs/yolov11_sign_type/confidence_histogram.png",
+      "confusion_matrix": "work_dirs/yolov11_sign_type/confusion_matrix.png",
+      "results": "work_dirs/yolov11_sign_type/results.png"
+    }
+  }
+}

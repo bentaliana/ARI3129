@@ -1,0 +1,11 @@
+Image_Index,Total_Detections,Mean_Confidence,Blind-Spot Mirror (Convex),No Entry (One Way),No Through Road (T-Sign),Pedestrian Crossing,Roundabout Ahead,Stop
+fb827152-MelatAssefa_52_Side.jpg,1,0.9782857894897461,0,0,0,0,0,1
+77a44aa1-MichaelFarrugia_61_Back.jpg,0,0.0,0,0,0,0,0,0
+a96db2b1-MelatAssefa_47_Back.jpg,0,0.0,0,0,0,0,0,0
+6a654ba2-MichaelFarrugia_13_Side.jpg,1,0.9507953524589539,0,0,0,0,1,0
+22efedae-MelatAssefa_44_Front.jpg,1,0.9409911036491394,1,0,0,0,0,0
+5fd489e8-MichaelFarrugia_3_Side.jpg,1,0.8028122782707214,0,0,1,0,0,0
+5bba0f96-MelatAssefa_57_Front.jpg,2,0.9431091845035553,0,1,0,0,0,1
+28809400-MelatAssefa_23_Front.jpg,1,0.9404014945030212,0,1,0,0,0,0
+a50f9868-MelatAssefa_33_Side.jpg,1,0.9423629641532898,0,1,0,0,0,0
+74bf3823-MelatAssefa_39_Front.jpg,1,0.9163960814476013,1,0,0,0,0,0

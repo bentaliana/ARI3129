@@ -1,33 +1,32 @@
 task: detect
 mode: train
-model: yolov8n.pt
-data: c:\Users\micha\Documents\School\University\3rd Year\Advanced Computer Vision
-  for Artificial Intelligence\Assignment_LATEST\dataset\COCO-based_COCO_sign_shape\data.yaml
-epochs: 10
+model: yolo11n.pt
+data: work_dirs/yolov11_sign_type/data.yaml
+epochs: 8
 time: null
-patience: 5
+patience: 20
 batch: 8
 imgsz: 640
 save: true
 save_period: -1
 cache: false
 device: cpu
-workers: 4
+workers: 0
 project: c:\Users\micha\Documents\School\University\3rd Year\Advanced Computer Vision
-  for Artificial Intelligence\Assignment_LATEST\work_dirs\yolov12_sign_shape
+  for Artificial Intelligence\Assignment_LATEST\work_dirs\yolov11_sign_type
 name: train
 exist_ok: true
 pretrained: true
-optimizer: AdamW
+optimizer: SGD
 verbose: true
-seed: 0
+seed: 3129
 deterministic: true
 single_cls: false
 rect: false
 cos_lr: true
-close_mosaic: 2
+close_mosaic: 10
 resume: false
-amp: true
+amp: false
 fraction: 1.0
 profile: false
 freeze: null
@@ -73,11 +72,11 @@ simplify: true
 opset: null
 workspace: null
 nms: false
-lr0: 0.005
+lr0: 0.01
 lrf: 0.01
-momentum: 0.937
+momentum: 0.9
 weight_decay: 0.0005
-warmup_epochs: 2
+warmup_epochs: 3.0
 warmup_momentum: 0.8
 warmup_bias_lr: 0.1
 box: 7.5
@@ -109,4 +108,4 @@ erasing: 0.4
 cfg: null
 tracker: botsort.yaml
 save_dir: C:\Users\micha\Documents\School\University\3rd Year\Advanced Computer Vision
-  for Artificial Intelligence\Assignment_LATEST\work_dirs\yolov12_sign_shape\train
+  for Artificial Intelligence\Assignment_LATEST\work_dirs\yolov11_sign_type\train

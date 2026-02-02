@@ -14,12 +14,12 @@ University of Malta
 
 This repository contains the code for the ARI3129 Group Assignment, where a dataset regarding Maltese traffic signs is compiled and used to train eight distinct object detection models to identify, locate and classify these signs (Notebooks 2a). These models include:
 - CenterNet
-- EfficientDet
 - Faster R-CNN
 - Mask R-CNN
 - RetinaNet
 - RF-DETR
 - YOLOv8
+- YOLOv11
 - YOLOv12
 
 Furthermore, four of these models are then used to perform localisation and classification of different attributes of the traffic signs, including mounting type, viewing angle, sign type, and sign conclusion (Notebooks 2b). These results are all compiled neatly into Notebook 2c for easy comparison.
