@@ -9,7 +9,7 @@ University of Malta
 
 ## Description
 
-<strong>Note: kindly refer to the Google Drive [here](https://drive.google.com/drive/folders/1-6govEfHJQnxJoWxZwjprHB9vV6kmJNF?usp=drive_link) to view the dataset. This includes the JSON files for the annotations, on both a member-by-member basis and on a group level.</strong>
+<strong>Note: kindly refer to the Google Drive [here](https://drive.google.com/drive/folders/1-6govEfHJQnxJoWxZwjprHB9vV6kmJNF?usp=drive_link) to view the dataset. This includes the JSON files for the annotations, on both a member-by-member basis and on a group level.</strong>  
 <strong>Note: kindly refer to the GitHub repisitory [here](https://github.com/bentaliana/ARI3129) to fully view the code and datasets for this assignment (due to the file submission limits on the VLE).</strong>
 
 This repository contains the code for the ARI3129 Group Assignment, where a dataset regarding Maltese traffic signs is compiled and used to train eight distinct object detection models to identify, locate and classify these signs (Notebooks 2a). These models include:
